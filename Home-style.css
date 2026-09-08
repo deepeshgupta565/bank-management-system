@@ -67,6 +67,34 @@
   
 }
 .title p{
-    margin-top: 2px;
-    
+    margin-top: 2px;  
+}
+.hero{
+  
+    width: 100%;
+    min-height:375px;
+    background-image: url(01_hero_bank_building_phone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    font-size: 30px;
+    color:#123B66;
+  position: relative;  
+  border: 2px solid transparent;
+}
+.hero p{
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    font-weight: 600;
+}
+.hero h2{
+        position: absolute;
+        top: 100px;
+        left: 15px;
+        font-weight: 700;
+}
+
+.span{
+    color: #1769E0
 }
