@@ -50,8 +50,10 @@
 }
 
 .links ul li a:hover {
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
+    text-shadow: 2px 2px 3px white;
     text-decoration: 3px underline white;
+
 }
 
 .navbar div button {
@@ -71,7 +73,7 @@
 }
 
 .navbar div button:hover {
-    box-shadow: 5px 5px 10px 2px white;
+    box-shadow: 1px 1px 3px 5px white;
     transition: all 0.3s;
 }
 
@@ -147,10 +149,15 @@
     border: 1px solid #0174FD;
     background-color: #0174FD;
     color: #F5F7F9;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400px;
     margin-top: 25px;
     cursor: pointer;
+}
+.hero .login:hover{
+    box-shadow: 1px 1px 3px 4px white;
+    font-size: 22px;
+    font-weight: 900;
 }
 
 .hero .create-account {
@@ -166,10 +173,15 @@
     border: 1px solid #0174FD;
     background-color: #0174FD;
     color: #F5F7F9;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400px;
     margin-top: 5px;
     cursor: pointer;
+}
+.hero .create-account:hover{
+    box-shadow: 1px 1px 3px 5px white;
+    font-size:22px;
+    font-weight: 700;
 }
 
 .hero button arrow {
@@ -185,7 +197,7 @@
     position: relative;
     width: 100%;
     min-height: 150px;
-    background-color: #99D9EA;
+    background-color: #d8f6ff;
     display: grid;
     grid-template-columns: repeat(5, auto);
     grid-template-rows: repeat(3, auto);
@@ -202,23 +214,24 @@
 }
 
 .secure {
-    font-size: 100px;
+    font-size: 70px;
     color: #0174FD;
+   
 }
 
 .bolt {
     color: purple;
-    font-size: 100px;
+    font-size: 70px;
 }
 
 .mobile {
     color: green;
-    font-size: 100px;
+    font-size: 70px;
 }
 
 .headset {
     color: orange;
-    font-size: 100px;
+    font-size: 70px;
 }
 
 .para2 {
@@ -235,7 +248,7 @@
 }
 
 .features h6 {
-    padding: 5px;
+    
     margin-top: 10px;
     text-align: center;
     font-size: 25px;
@@ -247,5 +260,97 @@
     color: #2378FE;
     font-weight: 500;
     font-size: 25px;
+     margin-bottom: 15px;
+}
+.our-service{
+    margin-top: 20px;
+    width: 100%;
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+    grid-template-rows: repeat(3,auto);
+    gap: 25px;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+}
+
+.our-service .service h6{
+        margin-bottom: 10px;
+        color: #0756f2;
+        font-size: 20px;
+        font-weight: 300;
+        padding-left: 10px;
+}
+.our-service .service h4{
+    color: #053b86;
+    margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+     padding-left: 10px;
+
+}
+.our-service .service p{
+    color: #5182f4;
+    font-size: 20px;
+    font-weight: 400;
+     padding-left: 10px;
+}
+.cards{
+    width: auto;
+    height: 240px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border: 1px solid lavender;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 1px 1px 3px 6px gray;
+}
+.cards:hover{
+    box-shadow: 2px 2px 3px 6px lightcoral;
+  
+}
+
+.person{
+    padding-top: 10px;
+    color: #2174e7;
+    font-size: 50px;
+}
+.debit{
+    color: rgb(33, 205, 33);
+    font-size: 50px;
+     padding-top: 10px;
+}
+.coins{
+    color: rgb(202, 38, 202);
+    font-size: 50px;
+     padding-top: 10px;
+}
+.loans{
+    color: orangered;
+    font-size: 50px;
+     padding-top: 10px;
+}
+.house{
+    color: lightgreen;
+    font-size: 50px;
+     padding-top: 10px;
+}
+.heart{
+    color: rgb(207, 29, 29);
+    font-size: 50px;
+     padding-top: 10px;
+}
+.cards h4{
+    font-size: 30px;
+    color:rgb(109, 14, 176);
+    margin-top:15px;
+    margin-bottom: 15px;
+    
+}
+.cards p{
+   color: #5182f4;
+    font-size: 17px;
+ font-weight: 400;
 }
