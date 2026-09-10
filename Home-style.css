@@ -1,49 +1,60 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100%vh;
 }
-.navbar{
-    color: #F5F7F9;;
-   height: 80px;
+
+.navbar {
+    color: #F5F7F9;
+    ;
+    height: 80px;
     background-color: #043364;
     position: relative;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     gap: 30px;
+    position: sticky;
+    top: 1;
 }
-.icon{
+
+.icon {
     position: absolute;
     left: 10px;
     color: #F5F7F9;
-   font-size: 50px;
+    font-size: 50px;
 }
 
-.links{
+.links {
     color: #F5F7F9;
 }
-.links ul{
+
+.links ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
 }
-.links ul li{
+
+.links ul li {
     margin: 5px;
     list-style: none;
 }
-.links ul li a{
+
+.links ul li a {
     list-style: none;
     text-decoration: none;
     color: #F5F7F9;
     font-size: 22px;
 }
-.links ul li a:hover{
-      transition: all  0.3s;
-      text-decoration: 3px underline white;
+
+.links ul li a:hover {
+    transition: all 0.3s;
+    text-decoration: 3px underline white;
 }
-.navbar div button{
+
+.navbar div button {
     padding-left: 45px;
     padding-right: 45px;
     padding-top: 8px;
@@ -51,113 +62,190 @@
     border-radius: 30px;
     border: 1px solid white;
     background-color: transparent;
-    color:#F5F7F9;
+    color: #F5F7F9;
     font-size: 22px;
     font-weight: 400px;
     margin-top: 5px;
     cursor: pointer;
-    
+
 }
-.navbar div button:hover{
+
+.navbar div button:hover {
     box-shadow: 5px 5px 10px 2px white;
-    transition: all  0.3s;
+    transition: all 0.3s;
 }
-.title h1{
+
+.title h1 {
     text-transform: uppercase;
-  
+
 }
-.title p{
-    margin-top: 2px;  
+
+.title p {
+    margin-top: 2px;
 }
-.hero{
-  
+
+.hero {
+    margin: 0px;
     width: 100%;
     height: fit-content;
-    min-height:375px;
+    min-height: 375px;
     border: 2px solid transparent;
     display: flex;
-    position: relative; 
-    background-image:  url(01_hero_bank_building_phone.png);
+    position: relative;
+    background-image: url(01_hero_bank_building_phone.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    
+
 }
+
 .hero::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    
+
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); 
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
-.hero .para1{
+
+.hero .para1 {
     position: absolute;
-    top:80px;
+    top: 80px;
     left: 100px;
 }
-.hero div  p{
 
-   position: absolute;
-   left: 100px;
-   top:160px;
-   font-weight: bolder;
-   z-index: 2;
-   color: #FFFFFF;
-  font-size: 24px;
+.hero div p {
+
+    position: absolute;
+    left: 100px;
+    top: 160px;
+    font-weight: bolder;
+    z-index: 2;
+    color: #FFFFFF;
+    font-size: 24px;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     line-height: 30px;
     word-spacing: 2px;
 }
 
 
-.hero .login{
+.hero .login {
     position: absolute;
     bottom: 60px;
     left: 300px;
     z-index: 4;
     margin-left: 30px;
-     padding-left: 45px;
+    padding-left: 45px;
     padding-right: 45px;
     padding-top: 8px;
     padding-bottom: 8px;
     border-radius: 30px;
     border: 1px solid #0174FD;
     background-color: #0174FD;
-    color:#F5F7F9;
+    color: #F5F7F9;
     font-size: 22px;
     font-weight: 400px;
     margin-top: 25px;
     cursor: pointer;
 }
-.hero .create-account
-{
-     position: absolute;
-     bottom: 60px;
-      left: 20px;
-      z-index: 6;
-      padding-left: 45px;
-     padding-right: 45px;
+
+.hero .create-account {
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+    z-index: 6;
+    padding-left: 45px;
+    padding-right: 45px;
     padding-top: 8px;
     padding-bottom: 8px;
     border-radius: 30px;
     border: 1px solid #0174FD;
     background-color: #0174FD;
-    color:#F5F7F9;
+    color: #F5F7F9;
     font-size: 22px;
     font-weight: 400px;
     margin-top: 5px;
     cursor: pointer;
 }
-.hero button arrow
-{
+
+.hero button arrow {
     color: white;
     font-size: 22px;
     font-weight: 400px;
 }
 
+.features {
+    margin-top: 12px;
+    border: 1px solid #99D9EA;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 150px;
+    background-color: #99D9EA;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 25px;
+    align-items: center;
+    justify-items: center;
 
+}
+
+.features .inside-feature {
+
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.secure {
+    font-size: 100px;
+    color: #0174FD;
+}
+
+.bolt {
+    color: purple;
+    font-size: 100px;
+}
+
+.mobile {
+    color: green;
+    font-size: 100px;
+}
+
+.headset {
+    color: orange;
+    font-size: 100px;
+}
+
+.para2 {
+    color: #2378FE;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.features .heading1 {
+    color: #03285D;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.features h6 {
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.features p {
+    padding: 5px;
+    color: #2378FE;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
