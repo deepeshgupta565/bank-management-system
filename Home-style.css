@@ -305,10 +305,14 @@
     border: 1px solid lavender;
     border-radius: 15px;
     text-align: center;
+    margin-right: 10px;
     box-shadow: 1px 1px 3px 6px gray;
+     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .cards:hover{
-    box-shadow: 2px 2px 3px 6px lightcoral;
+  box-shadow: 0 20px 30px rgba(37, 99, 235, 0.4);
+
+    transform: translateY(-10px) scale(1.05);
   
 }
 
@@ -341,9 +345,10 @@
     color: rgb(207, 29, 29);
     font-size: 50px;
      padding-top: 10px;
+   
 }
 .cards h4{
-    font-size: 30px;
+    font-size: 35px;
     color:rgb(109, 14, 176);
     margin-top:15px;
     margin-bottom: 15px;
@@ -353,4 +358,39 @@
    color: #5182f4;
     font-size: 17px;
  font-weight: 400;
+}
+.about{
+    padding-top: 12px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: auto;
+    background-color: #F3F8FE;
+    align-items: center;
+    justify-items: center;
+}
+.about div h5{
+    color: #1667FD;
+    font-size: 15px;
+    font-weight: 500;
+    
+}
+.about div h3{
+    color: rgb(39, 1, 66);
+    font-size: 18px;
+    font-weight: 900;
+    padding-top: 10px;
+}
+.about div p{
+    color: #849DB6;
+    padding-top:  8px;
+}
+.about ul li{
+  
+    font-size: 18px;
+    font-weight: 600;
+    list-style: none;
+}
+.about ul li h6{
+    color: #516A98;
+    font-size: 20px;
 }
