@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%vh;
+}
+
+.navbar {
+    color: #F5F7F9;
+    height: 80px;
+    background-color: #043364;
+    /* position: relative; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+ 
+}
+.icon {
+    position: absolute;
+    left: 10px;
+    color: #F5F7F9;
+    font-size: 50px;
+}
+
+.links {
+    color: #F5F7F9;
+}
+
+.links ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.links ul li {
+    margin: 5px;
+    list-style: none;
+}
+
+.links ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: #F5F7F9;
+    font-size: 22px;
+}
+
+.links ul li a:hover {
+    /* transition: all 0.3s; */
+    text-shadow: 2px 2px 3px white;
+    text-decoration: 3px underline white;
+
+}
+
+.navbar div button {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 30px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: #F5F7F9;
+    font-size: 22px;
+    font-weight: 400px;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+
+.navbar div button:hover {
+    box-shadow: 1px 1px 3px 5px white;
+    transition: all 0.3s;
+}
+.title h1 {
+    text-transform: uppercase;
+
+}
+
+.title p {
+    margin-top: 2px;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    margin-top: 1px;
+    position: relative;
+}
+.hero div  h4{
+    color: #3F48CC;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.hero div h2{
+    color: #09457B;
+    position: absolute;
+    top:65px;
+    left:12px;
+    font-weight: 700;
+    font-size: 35px;
+
+}
+.hero div p{
+    color: #415D8C;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    top:155px;
+    left:12px;
+}
+.discuss{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+.discuss .inner-discuss{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    gap: 25px;
+    margin-top: 20px;
+    margin-right: 100px;
+    
+}
+.inner-discuss .center-discuss{
+    display: flex;
+    gap: 20px;
+}
+ .discuss  h4{
+     color: #3F48CC;
+      color: #3F48CC;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 2px;
+   
+}
+.discuss h2{
+    color: #03306D;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.discuss p{
+        color: #3F48CC;
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 15px;
+}
+.inner-discuss .center-discuss h3{
+    color: #0174FD;
+    font-size: 18px;
+}
+.shield{
+    color: #0174FD;
+    font-size: 45px;
+}
+.bulb{
+    color: #0174FD;
+    font-size: 45px;
+}
+.user{
+    color: #0174FD;
+    font-size: 45px;
+}
+.stars{
+    color: #0174FD;
+    font-size: 45px;
+}
