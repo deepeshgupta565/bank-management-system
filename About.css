@@ -173,3 +173,114 @@
     color: #0174FD;
     font-size: 45px;
 }
+.aim{
+    font-size: 22px;
+}
+.cards{
+    border: 2px solid lightblue;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    height: 300px;
+    position: relative;
+    margin-top: 5px;
+}
+.cards .inside-cards{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 25px;
+    z-index: 1;
+}
+.cards div h4{
+    position: absolute;
+    top: 5px;
+    left: 65px;
+    color: #0174FD;
+    font-size: 22px;
+    margin-bottom: 12px;
+    z-index: 2;
+}
+.cards div h3{
+    margin-top: 12px;
+    color: #03306D;
+    font-size: 30px;
+    position: absolute;
+    top:25px;
+    left: 65px;
+    font-weight: 800;
+    margin-top: 25px;
+}
+.cards .first{
+    color: #0174FD;
+    font-weight: 300;
+    position: absolute;
+    top: 75px;
+    left: 65px;
+    line-height: 20px;
+    word-spacing: 5px;
+    margin-top: 25px;
+    
+    
+}
+.cards a{
+    border: 2px solid #0174FD;
+    background-color: #0174FD;
+    color: white;
+    border-radius: 75px;
+    padding: 8px 20px;
+    text-decoration: none;
+    position: absolute;
+    top: 150px;
+    left: 65px;
+    margin-top: 25px;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+.cards a:hover{
+    font-size: 22px;
+    word-spacing: 5px;
+    box-shadow: 2px 2px 3px 7px  white;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.cards .inside-cards div{
+    min-height: 250px;
+    text-align: center;
+        border: 2px solid transparent;
+         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+         border-radius: 15PX;
+         overflow: hidden;
+}
+.aim{
+    color:#0174FD;
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+.eye{
+     color:#0174FD;
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+.diamond{
+     color:#0174FD;
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+.inside-cards h2{
+    color: #0174FD;
+    margin: 12px;
+}
+.inside-cards P{
+    color: #0174FD;
+    font-weight: 300;
+    line-height: 22px;
+
+}
+.inside-cards div ul> li{
+    color: #0174FD;
+    line-height: 22px;
+    font-weight: 500;
+
+}
