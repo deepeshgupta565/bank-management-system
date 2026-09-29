@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%vh;
+}
+
+.navbar {
+    color: #F5F7F9;
+    height: 80px;
+    background-color: #043364;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+ 
+}
+
+.icon {
+    position: absolute;
+    left: 10px;
+    color: #F5F7F9;
+    font-size: 50px;
+}
+
+.links {
+    color: #F5F7F9;
+}
+
+.links ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+.links ul li {
+    margin: 5px;
+    list-style: none;
+}
+
+.links ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: #F5F7F9;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.links ul li a:hover {
+    /* transition: all 0.3s; */
+    text-shadow: 2px 2px 3px white;
+    text-decoration: 3px underline white;
+
+}
+
+.navbar div button {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 30px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: #F5F7F9;
+    font-size: 22px;
+    font-weight: 400px;
+    margin-top: 5px;
+    cursor: pointer;
+    width: fit-content;
+
+}
+
+.navbar div button:hover {
+    box-shadow: 1px 1px 3px 5px white;
+    transition: all 0.3s;
+}
+
+.title h1 {
+    text-transform: uppercase;
+
+}
+
+.title p {
+    margin-top: 2px;
+}
+
+.hero {
+    margin: 0px;
+    width: 100%;
+    height: fit-content;
+    min-height: 375px;
+    border: 2px solid transparent;
+    display: flex;
+    position: relative;
+    background-image: url(01_hero_bank_building_phone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero .para1 {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+}
+
+.hero div p {
+    word-spacing: 5px;
+    line-height: 8px;
+    position: absolute;
+    left: 100px;
+    top: 160px;
+    font-weight: bolder;
+    z-index: 2;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    line-height: 30px;
+    word-spacing: 2px;
+}

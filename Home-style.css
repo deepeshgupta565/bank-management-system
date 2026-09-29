@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    width: 100%;
+    width: 100%vh;
 }
 
 .navbar {
     color: #F5F7F9;
     height: 80px;
     background-color: #043364;
-    /* position: relative; */
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -45,6 +45,7 @@
     text-decoration: none;
     color: #F5F7F9;
     font-size: 22px;
+    cursor: pointer;
 }
 
 .links ul li a:hover {
@@ -67,6 +68,7 @@
     font-weight: 400px;
     margin-top: 5px;
     cursor: pointer;
+    width: fit-content;
 
 }
 
@@ -156,8 +158,9 @@
 }
 .hero .login:hover{
     box-shadow: 1px 1px 3px 4px white;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 900;
+    
 }
 
 .hero .create-account {
@@ -181,7 +184,7 @@
 }
 .hero .create-account:hover{
     box-shadow: 1px 1px 3px 5px white;
-    font-size:22px;
+    font-size:18px;
     font-weight: 700;
 }
 
@@ -270,9 +273,9 @@
     width: 100%;
     min-height: 300px;
     display: grid;
-    grid-template-columns: repeat(6,auto);
+    grid-template-columns: repeat(3,auto);
     grid-template-rows: repeat(3,auto);
-    gap: 25px;
+    gap: 20px;
     align-items: center;
     justify-items: center;
     position: relative;
@@ -301,14 +304,15 @@
      padding-left: 10px;
 }
 .cards{
-    width: auto;
-    height: 240px;
+    width: 300px;
+    height: 300px;
     padding-left: 12px;
     padding-right: 12px;
     border: 1px solid lavender;
     border-radius: 15px;
     text-align: center;
     margin-right: 10px;
+    overflow: hidden;
     box-shadow: 1px 1px 3px 6px gray;
      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
